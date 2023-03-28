@@ -7,14 +7,15 @@
  */
 int digit_counter(int n)
 {
-	int count = 0;
+	unsigned int count = 0;
+	unsigned int num = n;
 
 	if (n < 0)
-		n = n * -1;
+		num = n * -1;
 	while (n != 0)
 	{
 		count++;
-		n = n / 10;
+		num = num / 10;
 	}
 	return (count);
 }
@@ -26,7 +27,7 @@ int digit_counter(int n)
  */
 void print(int n)
 {
-	int num;
+	unsigned int num;
 
 	if (n < 0)
 	{
