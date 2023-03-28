@@ -15,7 +15,9 @@ int (*get_handelling_func(char c))(va_list, flags_s *)
 	hand_s function_array[] = {
 		{'s', print_string},
 		{'c', print_char},
-		{'%', print_percent}
+		{'%', print_percent},
+		{'d', print_int},
+		{'i', print_int}
 		};
 	int num_of_flags = 3;
 
