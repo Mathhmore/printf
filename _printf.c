@@ -7,7 +7,7 @@
  */
 int _printf(const char *format, ...)
 {
-        int (*func)(va_list, flags_s *);
+	int (*func)(va_list, flags_s *);
 	const char *chr;
 	va_list arg;
 	flags_s flags = {0, 0, 0};
