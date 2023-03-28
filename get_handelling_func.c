@@ -19,7 +19,7 @@ int (*get_handelling_func(char c))(va_list, flags_s *)
 		{'d', print_int},
 		{'i', print_int}
 		};
-	int num_of_flags = 3;
+	int num_of_flags = 5;
 
 	register int i;
 

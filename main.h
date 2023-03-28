@@ -40,5 +40,6 @@ int print_percent(va_list list, flags_s *f);
 int print_char(va_list list, flags_s *f);
 int (*get_handelling_func(char c))(va_list, flags_s *);
 int get_flag(char c, flags_s *f);
+int print_int(va_list list, flags_s *f);
 
 #endif
