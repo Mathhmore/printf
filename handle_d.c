@@ -12,7 +12,7 @@ int digit_counter(int n)
 
 	if (n < 0)
 		num = n * -1;
-	while (n != 0)
+	while (num != 0)
 	{
 		count++;
 		num = num / 10;
