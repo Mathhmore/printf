@@ -20,6 +20,8 @@ int _printf(const char *format, ...)
 		return (-1);
 	for (chr = format; *chr; chr++)
 	{
+		if (chr == NULL)
+			return (0);
 		if (*chr == '%')
 		{
 			chr++;
