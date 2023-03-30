@@ -29,8 +29,10 @@ int _printf(const char *format, ...)
 				continue;
 			}
 			while (get_flag(*chr, &flags))
-			chr++;
+				chr++;
 			func = get_handelling_func(*chr);
+			if (func == NULL)
+				return (-1);
 			count += (func) ? func(arg, &flags) : _printf("%%%c", *chr);
 		}
 		else
